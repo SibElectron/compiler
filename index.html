@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online HTML Compiler</title>
+    <title>Онлайн Компилятор</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="input-container">
-        <div id="videoContainer">
-        
-          <video preload="auto" loop autoplay src="https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6"></video>
-        </div>>
+        <div id="video-container">
+            <input type="text" id="youtube-url" placeholder="Вставьте ссылку на видео">
+            <button onclick="loadVideo()">загрузить</button>
+            <div id="video-player"></div>
+        </div>
 
-      <textarea id="input-code" placeholder="Enter your HTML code here..."></textarea>
+        <div id="code-editor">
+            <textarea id="html-code" placeholder="Ваш код hmtl"></textarea>
+            <textarea id="css-code" placeholder="Ваш css код"></textarea>
+            
+        </div>
     </div>
-    
+
     <div id="divider"></div>
     <div id="output-container">
         <iframe id="output-frame"></iframe>
@@ -25,5 +30,5 @@
 
     <script src="main.js"></script>
 </body>
-
+    
 </html>
