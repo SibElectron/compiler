@@ -11,15 +11,15 @@
 <body>
     <div id="input-container">
         <div id="video-container">
-            <input type="text" id="youtube-url" placeholder="Вставьте ссылку на видео">
-            <button onclick="loadVideo()">загрузить</button>
-            <div id="video-player"></div>
+            <video id="video-player" controls>
+                <source src="www.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <div id="code-editor">
-            <textarea id="html-code" placeholder="Ваш код hmtl"></textarea>
-            <textarea id="css-code" placeholder="Ваш css код"></textarea>
-            
+            <textarea id="html-code" placeholder="Ваш код HTML"></textarea>
+            <textarea id="css-code" placeholder="Ваш CSS код"></textarea>
         </div>
     </div>
 
@@ -30,5 +30,5 @@
 
     <script src="main.js"></script>
 </body>
-    
+
 </html>
